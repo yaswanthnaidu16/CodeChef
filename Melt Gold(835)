@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    x, y = map(int, input().split())
+    t = y
+    m = 0
+    while t < x:
+        m += 1
+        t += m
+    print(m)
