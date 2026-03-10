@@ -1,0 +1,18 @@
+#to check if following conditions meet and print grade according to that
+for _ in range(int(input())):
+    h, c, t = map(float, input().split())
+    c1 = h > 50
+    c2 = c < 0.7
+    c3 = t > 5600
+    if c1 and c2 and c3:
+        print(10)
+    elif c1 and c2:
+        print(9)
+    elif c2 and c3:
+        print(8)
+    elif c1 and c3:
+        print(7)
+    elif c1 or c2 or c3:
+        print(6)
+    else:
+        print(5)
