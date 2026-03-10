@@ -1,0 +1,7 @@
+for _ in range(int(input())):
+    a, b = map(int, input().split())
+    diff = abs(a - b)
+    if (diff == 1 and min(a, b) % 2 == 1) or diff == 2:
+        print("YES")
+    else:
+        print("NO")
