@@ -1,0 +1,6 @@
+for _ in range(int(input())):
+    n, x = map(int, input().split())
+    groups = n // 3
+    rem = n % 3
+    paid = groups * 2 + rem
+    print(paid_ * x)
