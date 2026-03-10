@@ -1,0 +1,13 @@
+a = int(input())
+b = int(input())
+area = a * b
+peri = 2 *(a + b)
+if peri > area:
+    print("Peri")
+    print(peri)
+elif area > peri:
+    print("Area")
+    print(area)
+else:
+    print("Eq")
+    print(peri)
