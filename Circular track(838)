@@ -1,0 +1,4 @@
+#to check min distance of 2 points in a circular path
+for _ in range(int(input())):
+    a, b, c = map(int, input().split())
+    print(min(abs(a - b), c - (abs(a - b))))
