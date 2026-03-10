@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+    a, b, c, d, e = map(int, input().split())
+    p = (a / d) * b
+    dd = (a / e) * c
+    if p == dd:
+        print("ANY")
+    elif p > dd:
+        print("DIESEL")
+    else:
+        print("PETROL")
