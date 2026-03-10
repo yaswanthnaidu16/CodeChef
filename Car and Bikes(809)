@@ -1,0 +1,4 @@
+#In this program we will be checking whether we can manufacture tyres for bike with remainder of 2
+for _ in range(int(input())):
+    a = int(input())
+    print("YES" if a % 4 ==2 else "NO")
