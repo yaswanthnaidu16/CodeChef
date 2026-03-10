@@ -1,0 +1,13 @@
+for _ in range(int(input())):
+    a = int(input())
+    x = list(map(int, input().split()))
+    y = list(map(int, input().split()))
+    count = 0
+    for i in range(a):
+        if i == 0:
+            time = x[i]
+        else:
+            time = x[i] - x[i-1]
+        if time >= y[i]:
+            count += 1
+    print(count)
