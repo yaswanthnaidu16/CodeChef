@@ -1,0 +1,8 @@
+# To check whether the string contain alphabets from given set or not
+a = set(input())
+for _ in range(int(input())):
+    s = input()
+    if all(i in a for i in s):
+        print("Yes")
+    else:
+        print("No")
