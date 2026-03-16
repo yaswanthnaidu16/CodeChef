@@ -1,0 +1,11 @@
+#In this scenerio RMA is in lead of 3 points to FCB in order for FCB to win league title they must win against Eibar and RMA must loose against Malaga
+#Visca Barça
+for _ in range(int(input())):
+    d = {}
+    for _ in range(4):
+        t, g = input().split()
+        d[t] = int(g)
+    if d["RealMadrid"] < d["Malaga"] and d["Barcelona"] > d["Eibar"]:
+        print("Barcelona")
+    else:
+        print("RealMadrid")
