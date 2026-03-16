@@ -1,0 +1,5 @@
+#This question is reference to "pawri" meme which went viral in 2022
+for _ in range(int(input())):
+    s = input()
+    a = s.replace("party", "pawri")
+    print(a)
