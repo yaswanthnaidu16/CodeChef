@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+    a, b, c, d, e = map(int, input().split())
+    if a * b < 10:
+        print(0)
+    elif 21 > a * b > 9:
+        print(1)
+    elif 42 > a * b >= 21:
+        print(2)
+    else:
+        print(3)
