@@ -1,0 +1,6 @@
+#there is a contest held and depending upon no of problems solved each is categorised with a title and we need to print it
+t = ["Beginner","Junior Developer","Middle Developer",
+     "Senior Developer","Hacker","Jeff Dean"]
+for _ in range(int(input())):
+    x = list(map(int,input().split()))
+    print(t[sum(x)])
