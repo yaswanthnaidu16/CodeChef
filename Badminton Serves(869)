@@ -1,0 +1,4 @@
+#To print no of serves taken by Player
+for _ in range(int(input())):
+    a = int(input())
+    print(a // 2 + 1)
