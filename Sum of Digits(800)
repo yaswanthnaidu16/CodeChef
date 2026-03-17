@@ -1,0 +1,8 @@
+#To find sum of digits in a given number
+for _ in range(int(input())):
+    a = input().strip()
+    count = 0
+    for i in a:
+        count += int(i)
+    print(count)
+    
