@@ -1,0 +1,9 @@
+#To find no of matches it take to align the sum of given 2 integers with each digit to represent it require fixed no of matches
+m = [6,2,5,5,4,5,6,3,7,6]
+for _ in range(int(input())):
+    a, b = map(int, input().split())
+    s = str(a + b)
+    total = 0
+    for d in s:
+        total += m[int(d)]
+    print(total)
