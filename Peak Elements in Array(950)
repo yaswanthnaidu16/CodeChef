@@ -1,0 +1,18 @@
+#To print peak elements from an array by coparing with previous and successive elements 
+a = int(input())
+x = list(map(int, input().split()))
+res = []
+for i in range(a):
+    if i == 0:
+        if a > 1 and x[i] > x[i+1]:
+            res.append(x[i])
+    elif i == a - 1:
+        if x[i] > x[i-1]:
+            res.append(x[i])
+    else:
+        if x[i] > x[i-1] and x[i] > x[i+1]:
+            res.append(x[i])
+if res:
+    print(*res)
+else:
+    print(-1)
