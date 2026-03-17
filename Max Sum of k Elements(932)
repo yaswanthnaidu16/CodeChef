@@ -1,0 +1,9 @@
+#This problem is an example of a typical Sliding Window question where it require maximum sum of sub-array
+n, k = map(int, input().split())
+x = list(map(int, input().split()))
+curr = sum(x[:k])
+mx = curr
+for i in range(k, n):
+    curr = curr - x[i-k] + x[i]
+    mx = max(mx, curr)
+print(mx)
