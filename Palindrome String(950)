@@ -1,0 +1,6 @@
+#To check whether the given string is palindrome or not
+s = input()
+if s == s[::-1]:
+    print("YES")
+else:
+    print("NO")
