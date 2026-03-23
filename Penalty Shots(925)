@@ -1,0 +1,14 @@
+for _ in range(int(input())):
+    x=list(map(int,input().split()))
+    c1=c2=0
+    for i in range(len(x)):
+        if i%2==0:
+            c1+=x[i]
+        else:
+            c2+=x[i]
+    if c1>c2:
+        print(1)
+    elif c2>c1:
+        print(2)
+    else:
+        print(0)
