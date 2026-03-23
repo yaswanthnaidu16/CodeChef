@@ -1,0 +1,3 @@
+for _ in range(int(input())):
+    a,b,c=map(int,input().split())
+    print(1 if 0 in [a,b,c] and 1 in [a,b,c] else 0)
