@@ -1,0 +1,4 @@
+#To find min days Chef can survive on an island
+for _ in range(int(input())):
+    a,b,c,d,e = map(int,input().split())
+    print("YES" if a >= c*e and b >= d*e else "NO")
