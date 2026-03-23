@@ -1,0 +1,7 @@
+for _ in range(int(input())):
+    k = int(input())
+    p = k // 2
+    if k % 2 == 0:
+        print(p * 2)
+    else:
+        print(p * 2 + 3)
