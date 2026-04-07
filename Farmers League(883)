@@ -1,0 +1,4 @@
+#To find out diff of points between temas with highest points and 2nd best based on round robin format
+for _ in range(int(input())):
+    n = int(input())
+    print(3 * (n // 2))
