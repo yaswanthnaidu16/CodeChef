@@ -1,0 +1,5 @@
+#To find how many days Devu will be available to give party to his friends
+for _ in range(int(input())):
+    a = int(input())
+    x = set(map(int, input().split()))
+    print(len(x))
