@@ -1,0 +1,4 @@
+#This question is typically a contest 1st question which require basic understanding of profits
+for _ in range(int(input())):
+    a, b, c = map(int, input().split())
+    print((c * a) - (b * a))
