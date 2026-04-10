@@ -1,0 +1,11 @@
+#To find the no of times strike rate of Shubman Gill equals 100
+for _ in range(int(input())):
+    n = int(input())
+    x = list(map(int, input().split()))
+    total = 0
+    count = 0
+    for i in range(n):
+        total += x[i]
+        if total == i + 1:
+            count += 1
+    print(count)
