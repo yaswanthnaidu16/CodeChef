@@ -1,0 +1,14 @@
+n, h, x = map(int, input().split())
+a = list(map(int, input().split()))
+
+possible = False
+
+for t in a:
+    if x + t >= h:
+        possible = True
+        break
+
+if possible:
+    print("YES")
+else:
+    print("NO")
