@@ -1,0 +1,6 @@
+#Count the number of pairs (X, Y) such that 1 ≤ X ≤ A, 1 ≤ Y ≤ B, and X + Y is even
+
+for _ in range(int(input())):
+    a, b =map(int, input().split())
+    
+    print((a * b + 1 // 2))
