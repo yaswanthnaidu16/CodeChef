@@ -1,0 +1,16 @@
+#Calculates whether buying a discount coupon makes the total shopping cost strictly cheaper than buying items normally
+for _ in range(int(input())):
+    a, b, c = map(int, input().split())
+    x = list(map(int, input().split()))
+    
+    tot = sum(x)
+    count = 0
+    
+    for i in range(a):
+        if x[i] > c:
+            count += x[i] - c
+            
+    if b + count < tot:
+        print("COUPON")
+    else:
+        print("NO COUPON")
