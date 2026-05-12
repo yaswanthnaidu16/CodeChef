@@ -1,0 +1,15 @@
+#Find the total cost of all grocery items whose freshness value is greater than or equal to b
+
+for _ in range(int(input())):
+    a, b = map(int, input().split())
+    x = list(map(int, input().split()))
+    y = list(map(int, input().split()))
+
+    ans = 0
+
+    for i in range(a):
+        if x[i] >= b:
+            ans += y[i]
+
+    print(ans)
+    
