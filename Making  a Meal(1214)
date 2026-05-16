@@ -1,0 +1,19 @@
+for _ in range(int(input())):
+    n = int(input())
+    freq = {}
+
+    for i in range(n):
+        s = input()
+        for ch in s:
+            freq[ch] = freq.get(ch, 0) + 1
+
+    ans = min(
+        freq.get('c', 0) // 2,
+        freq.get('o', 0),
+        freq.get('d', 0),
+        freq.get('e', 0) // 2,
+        freq.get('h', 0),
+        freq.get('f', 0)
+    )
+
+    print(ans)
