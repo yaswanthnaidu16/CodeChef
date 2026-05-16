@@ -1,0 +1,10 @@
+for _ in range(int(input())):
+    s = input()   
+
+    zeros = s.count('0')
+    ones = s.count('1')
+
+    if zeros == 1 or ones == 1:
+        print("Yes")
+    else:
+        print("No")
