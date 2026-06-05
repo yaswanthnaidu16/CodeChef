@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    a, b = map(int, input().split())
+    x = list(map(int, input().split()))
+
+    b %= a
+    x = x[b:] + x[:b]
+
+    print(*x)
